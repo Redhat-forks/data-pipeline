@@ -9,4 +9,6 @@ COPY pyproject.toml requirements.txt config.yaml LICENSE $HOME
 
 RUN pip install --no-cache-dir -r requirements.txt
 
+ENTRYPOINT []
+
 CMD ["sh", "-c", "ccx-messaging $CONFIG_PATH"]
